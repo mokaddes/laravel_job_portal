@@ -1,0 +1,15 @@
+*~
+.env
+.vagrant/
+vendor/
+config/development.config.php
+data/cache/*
+!data/cache/.gitkeep
+phpunit.xml
+log
+cache
+behat.yml
+build
+module
+node_modules
+public/dist

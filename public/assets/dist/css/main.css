@@ -1,0 +1,81 @@
+aside.main-sidebar {
+    background: #fff;
+    box-shadow: 1px 0px 20px rgb(0 0 0 / 12%) !important;
+}
+
+.nav-sidebar .nav-item .nav-link {
+    padding: 10px 0px !important;
+    border-left: 3px solid transparent !important;
+    color: #313030;
+    border-bottom: 1px solid #EEE;
+}
+
+.nav-pills .nav-link:hover {
+    background: #f2f7f8 !important;
+    color: #009efb !important;
+    border-left: 3px solid #009efb !important;
+}
+
+.nav-pills .nav-link:hover {
+    background: #f2f7f8 !important;
+    color: #009efb !important;
+    border-left: 3px solid #009efb !important;
+}
+
+.nav-pills .nav-link.active {
+    background: #f2f7f8;
+    color: #009efb;
+    font-weight: 400;
+    border-left: 3px solid #009efb !important;
+}
+
+.font-weight-light {
+    font-weight: 800 !important;
+    color: #545759 !important;
+}
+
+.content-wrapper {
+    background-color: #ebedef !important;
+}
+
+.form-check-input {
+    margin-top: 8px;
+}
+
+label {
+    font-size: 15px;
+    color: #444;
+}
+
+.active_label label {
+    border: 1px solid #ddd !important;
+    background: none !important;
+    color: #515151 !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    border-radius: 3px 0px 0px 4px !important;
+}
+.active_label .btn-group.btn-group-toggle {
+    width: 100%;
+}
+.active_label span.input-group-text {
+    border-radius: 0px 3px 3px 0px !important;
+    border: none;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+.active_label .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+table tr td{
+    width:1% !important; 
+ }
+ 
+.table {
+  width: 100% !important;
+  overflow-x: auto !important;
+  display: block;
+}

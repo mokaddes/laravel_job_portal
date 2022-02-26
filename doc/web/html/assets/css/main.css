@@ -1,0 +1,753 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+button.badge {
+    border: none;
+    margin-top: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0
+}
+
+p {
+    margin: 0;
+}
+
+.navbar-light .navbar-toggler {
+    box-shadow: none !important;
+}
+
+.header .navbar-nav .dropdown-menu {
+    border-radius: 0px;
+    border: 1px solid #EEE;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar-nav .dropdown-menu a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    padding: 8px 11px;
+}
+
+.header .dropdown-item.active,
+.header .dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #3787d0;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #f3efefcf 0%, #3f51b5e8 100%);
+    z-index: 1;
+}
+
+.banner-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.banner form {
+    background: #ffffff;
+    padding: 17px 14px 0px 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.banner .form-control,
+.banner .form-select {
+    font-size: 14px;
+    height: 42px;
+    border: 1px solid #c6c9c9;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+}
+
+.banner .btn.btn-success {
+    padding: 7px 20px;
+    font-size: 15px;
+    height: 42px;
+    font-weight: 600;
+    border-radius: 2px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.banner-right {
+    background: #2a5992;
+    padding: 16px 16px;
+    height: 315px;
+    overflow-y: auto;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.banner-right-title {
+    margin-bottom: 10px;
+}
+
+.banner-right-title h3 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.jobs-list ul li {
+    display: inline-block;
+}
+
+.jobs-list ul li a {
+    border: 1px solid #EEE;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 0 5px 5px 0;
+    opacity: 0.8;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.jobs-list ul li a:hover {
+    background-color: #fff;
+    color: #2a5992;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.quick-links ul li {
+    display: inline-block;
+    margin: 1px 2px;
+}
+
+.quick-links ul li a i {
+    font-size: 12px;
+    margin-right: 1px;
+}
+
+.quick-links ul li a {
+    color: #fff;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.quick-links ul li a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.live-job {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.counter-icon i {
+    border: 5px double #2a5992;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 50px;
+    padding-top: 11px;
+    background: #2a5992d1;
+}
+
+.counter-icon {
+    margin-right: 9px;
+}
+
+.jobs-content h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.jobs-content span {
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.jobs-content {
+    padding-top: 5px;
+}
+
+.card-header h4 {
+    font-size: 16px;
+    color: #2a5992;
+    margin-top: 3px;
+    float: left;
+    font-weight: 700;
+}
+
+.card-body ul li {
+    display: inline-block;
+    margin: 6px 5px;
+}
+
+.card-body ul li a {
+    font-size: 14px;
+    color: #525252;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.card-body ul li a:hover {
+    color: #000;
+}
+
+.slider-item {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #EEE;
+    padding: 2px 0px;
+}
+
+.slider-item:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.slider-item span.title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555;
+    margin-top: 5px;
+    display: block;
+}
+
+.slider-item span.des-bn {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.slider-item a:hover span {
+    color: #2a5992 !important;
+}
+
+.jobs-slider .carousel-control-next,
+.jobs-slider .carousel-control-prev {
+    background: #2a5992;
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    top: 42%;
+    opacity: 0;
+}
+
+.jobs-slider:hover .carousel-control-next,
+.jobs-slider:hover .carousel-control-prev {
+    opacity: 1;
+}
+
+.jobs-slider .carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 1rem;
+}
+
+.jobs-slider .carousel-control-prev {
+    left: -16px;
+}
+
+.jobs-slider .carousel-control-next {
+    right: -16px;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.category-sidebar .card-header h4 {
+    font-size: 15px;
+    color: #222;
+    font-weight: 600;
+}
+
+.category-sidebar .form-control {
+    font-size: 14px;
+    height: 42px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+}
+
+.category-sidebar .sidebar-list ul li {
+    display: block;
+    border-bottom: 1px solid #f5f3f3;
+    padding: 6px 0px;
+}
+
+.category-sidebar .sidebar-list ul li a {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.category-sidebar .sidebar-list ul li a:hover {
+    color: #000;
+    font-size: 15px;
+}
+
+.gender h6 {
+    font-size: 14px;
+    margin-bottom: 7px;
+    color: #444;
+}
+
+.gender .form-check {
+    display: inline-block;
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    margin: 0px 4px 0px 0px;
+}
+
+.filter-form label {
+    font-size: 13px;
+    color: #444;
+    font-weight: 600;
+}
+
+.filter-form .form-select {
+    border: 1px solid #DDD;
+    font-size: 14px;
+    color: #444;
+    height: 34px;
+    box-shadow: none;
+    outline: none;
+}
+
+.category-right .card-header form {
+    display: flex;
+}
+
+.category-right .card-header label {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-right: 9px;
+}
+
+.category-right .card-header .form-select {
+    font-size: 14px;
+    width: 125px;
+    border: 1px solid #EEE;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+}
+
+.category-right-header span {
+    display: inline-block;
+    padding-top: 7px;
+    font-size: 12px;
+    color: #555;
+    font-weight: 600;
+}
+
+.job-list {
+    border: 1px solid #e9e9e9;
+    padding: 16px 23px;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%);
+    background: #ffffff;
+    position: relative;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.job-list:hover {
+    box-shadow: none;
+    background: #f1f1f1;
+}
+
+.job-list h3 a {
+    font-size: 24px;
+    color: #027702;
+    font-weight: 500;
+}
+
+.job-list h3 {
+    margin-bottom: 6px;
+}
+
+.address-info ul li {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    padding-bottom: 2px;
+}
+
+.address-info ul li i {
+    padding-right: 2px;
+}
+
+.job_deadline {
+    position: absolute;
+    bottom: 17px;
+    right: 23px;
+}
+
+.job_deadline h6 {
+    font-size: 13px;
+    color: #333;
+}
+
+.job_deadline h6 i {
+    padding-right: 3px;
+}
+
+.pagination li a {
+    font-size: 14px !important;
+    color: #222;
+    font-weight: bold;
+    margin: 0 !important;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.pagination li {
+    margin: 0px 2px !important;
+}
+
+.details-content .card-header h4 {
+    color: #037903;
+}
+
+.details-article h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.details-article ul li {
+    font-size: 14px;
+    display: block;
+    color: #555;
+    padding: 3px 12px;
+    position: relative;
+}
+
+.details-article ul li:before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 6px;
+    border-radius: 7px;
+    height: 6px;
+    background: #858484;
+    content: "";
+}
+
+.apply_job h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 2px solid #d9d5d5;
+    display: inline-block;
+    padding-bottom: 9px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.apply_job ul li {
+    display: block;
+    font-size: 15px;
+    color: #444;
+    padding: 4px 0px;
+}
+
+.apply_job h6 {
+    font-size: 14px;
+    color: #222;
+    margin: 12px 0px;
+}
+
+.apply_job h5 {
+    margin-bottom: 11px;
+    font-size: 18px;
+    color: #333;
+}
+
+.apply_job h5 strong {
+    color: #dc3545;
+}
+
+.card-header h6 a {
+    font-size: 13px;
+    color: #777;
+}
+
+.job-summary.card-header h4 {
+    font-size: 15px;
+    color: #444;
+    font-weight: 700;
+}
+
+.summary-list ul li {
+    font-size: 14px;
+    display: block;
+    color: #666;
+    padding: 5px 0px;
+}
+
+.login {
+    padding: 50px 0px;
+}
+
+.login .card-body {
+    padding: 39px 38px;
+}
+
+.social-login ul li a {
+    background: #000000;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+    padding-top: 10px;
+}
+
+.social-login ul li {
+    margin: 0px;
+    margin-top: 13px;
+}
+
+.fb {
+    background: #3b5998 !important;
+}
+
+.lin {
+    background: #007bb6 !important;
+}
+
+.gle {
+    background: #dd4b39 !important;
+}
+
+.git {
+    background: #444444 !important;
+}
+
+.xin {
+    background: #006567 !important;
+}
+
+.login .form-floating>.form-control {
+    border: 1px solid #DDD;
+    box-shadow: none;
+    height: 53px;
+}
+
+.forgot-pass a {
+    font-size: 15px;
+}
+
+.login .form-floating>label {
+    font-size: 14px;
+    color: #444;
+}
+
+.card-right_banner h4 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.card-right_banner p {
+    font-size: 17px;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+.card-right_banner p a {
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+.card_right_sidebar .card-header h4 {
+    color: #444;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 0px;
+}
+
+.application_form span {
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+}
+
+.application_form h3 {
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: blue;
+    font-weight: 500;
+}
+
+.application_form h3 span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.application_form p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.application_form a {
+    font-weight: bold;
+}
+
+.account_card span {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.account_card p {
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+}
+
+.btn-facebook {
+    background: #3b5998;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 14px 4px 9px;
+}
+
+.btn-facebook i {
+    font-size: 14px;
+    background: #0f3685;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 8px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-facebook:hover {
+    background: #2d4373;
+}
+
+.btn-twitter {
+    background: #55acee;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 14px 4px 9px;
+}
+
+.btn-twitter i {
+    font-size: 14px;
+    background: #2795e9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 8px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-twitter:hover {
+    background: #2795e9;
+}
+
+.mini_card .card-header h4 {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+}
+
+.mini_card span {
+    font-size: 13px;
+    color: #444;
+    text-align: justify;
+    display: inline-block;
+}
+
+.mini_card a {
+    font-size: 14px;
+}

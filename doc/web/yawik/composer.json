@@ -1,0 +1,76 @@
+{
+    "name": "yawik/standard",
+    "description": "Skeleton for Yawik Applications",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "laminas",
+        "mvc",
+        "yawik"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4",
+        "composer/installers": "^1.0",
+        "yawik/application-pack": "^1.1",
+        "laminas/laminas-component-installer": "^1.1 | ^2.0"
+    },
+    "require-dev": {
+        "laminas/laminas-test": "^3.2",
+        "yawik/behat": "^0.34"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src/Demo/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DemoTest\\": "src/Demo/test/"
+        }
+    },
+    "config": {
+        "platform": {
+            "ext-mongo": "1.6.16"
+        },
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.32-dev"
+        },
+        "zf": {
+            "component-whitelist": [
+                "DoctrineModule",
+                "DoctrineMongoODMModule",
+                "yawik/core",
+                "yawik/auth",
+                "yawik/cv",
+                "yawik/applications",
+                "yawik/jobs",
+                "yawik/settings",
+                "yawik/pdf",
+                "yawik/geo",
+                "yawik/organizations"
+            ]
+        }
+    },
+    "scripts": {
+        "auto-scripts": [
+            "@cache-clear",
+            "npm install"
+        ],
+        "cache-clear": "./vendor/bin/yawik clear-cache",
+        "install-assets": "./vendor/bin/yawik assets-install --relative",
+        "serve": "php -S 127.0.0.1:8080 -t public/",
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    }
+}
